@@ -42,7 +42,6 @@ import com.sp.lang.except.ObjDeclException;
  * 
  * 语法解析器
  * 
- * @author tangdou
  *
  */
 public class LangParser extends Parser {

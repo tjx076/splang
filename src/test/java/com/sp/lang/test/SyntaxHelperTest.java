@@ -2,9 +2,7 @@ package com.sp.lang.test;
 
 import com.sp.lang.SyntaxHelper;
 
-/**
- * Created by tangdou on 2017/11/3.
- */
+
 public class SyntaxHelperTest {
 
     public static void main(String[] args) {

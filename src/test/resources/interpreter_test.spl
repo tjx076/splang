@@ -3,7 +3,7 @@ func MultiValue "InterpreterTest.MultiValue"
 func AnyUDFCall "InterpreterTest.AnyUDFCall"
 
 // 外部对象声明
-obj anyObjRef "com.olcap.test.AnyJavaObject"
+obj anyObjRef "com.sp.test.AnyJavaObject"
 
 // 支持单行注释
 // 基本数据类型：整数、小数、boolean、null、字符串

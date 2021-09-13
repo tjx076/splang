@@ -44,7 +44,6 @@ import com.sp.lang.symbol.SymbolType;
  * 
  * 外部访问者
  * 
- * @author tangdou
  *
  */
 public class LangVisitor {
@@ -380,7 +379,7 @@ public class LangVisitor {
 			if(exprArgList!=null&&!exprArgList.isEmpty()){
 				// delay compute
 				
-				String className = "com.olcap.lang.Expr"+exprArgList.size();
+				String className = "com.sp.lang.Expr"+exprArgList.size();
 				Class<?>[] parameterTypes = new Class<?>[2];
 				parameterTypes[0] = LangVisitor.class;
 				parameterTypes[1] = Expr.class;

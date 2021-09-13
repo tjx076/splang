@@ -9,23 +9,24 @@ import com.sp.lang.file.FileUtil;
  * 
  * 语法 Helper
  * 
- * @author tangdou
  *
  */
+@Deprecated
 public class SyntaxHelper {
 	
 	static String syntaxText = null;
 	
 	static {
 		try {
-			syntaxText = new String(FileUtil.readResource("/olaplang.md"), "UTF-8");
+			syntaxText = new String(FileUtil.readResource("/splang.md"), "UTF-8");
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-	
+
+	@Deprecated
 	public static enum SyntaxShortName {
 		
 		ObjDecl("### 对象声明(Object Declare)");

@@ -6,7 +6,6 @@ import java.util.Stack;
  * 
  * 词法解析器
  * 
- * @author tangdou
  *
  */
 public class LangLexer extends Lexer {
