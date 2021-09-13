@@ -153,7 +153,7 @@
 
 ```
 
-对应Java数据类型com.taobao.lbs.olcap.lang.Tuple
+对应Java数据类型com.sp.lang.Tuple
 
 ```
 
@@ -196,21 +196,21 @@ ObjClassFullyQualifiedName : Java的类全限定名，该类需提供无参数�
 
 示例：
 
-obj userComparator "com.taobao.lbs.user.UserComparator"
+obj userComparator "xxx.UserComparator"
 
 ```
 
 ###### 使用示例
 
-`说明：` 在计算过程中，简单计算比如加减乘除、比较大小等，我们可以直接使用`表达式`，但复杂计算就还是要写Java代码来做
+`说明：` 对于SPL实现不了的超级复杂的计算任务，我们可以使用`表达式`，用Java来实现
 
-比如 Aggregate算子需要传入一个聚合函数，如果这个聚合函数很复杂，就写一个Java的BiFunction实现，然后引入OlangLang使用即可
+比如 Aggregate算子需要传入一个聚合函数，如果这个聚合函数很复杂，就写一个Java的BiFunction实现，然后引入SPL使用即可
 
 然而，实际上，对象声明可以是任意Java对象
 
 ```
 
-obj userAgeAggregateBiFunction "com.taobao.lbs.user.UserAgeAggregateBiFunction"
+obj userAgeAggregateBiFunction "xxx.UserAgeAggregateBiFunction"
 
 Aggregate(usersList, 0, userAgeAggregateBiFunction)
 
@@ -232,7 +232,7 @@ JavaStaticMethodFullyQualifiedName : Java静态函数全限定名
 
 示例:
 
-func Aggregate "com.taobao.lbs.olcap.lang.BuildinFuncs.Aggregate"
+func Aggregate "com.sp.lang.BuildinFuncs.Aggregate"
 
 ```
 
@@ -244,8 +244,8 @@ func Aggregate "com.taobao.lbs.olcap.lang.BuildinFuncs.Aggregate"
 
 ```
 
-func Aggregate "com.taobao.lbs.olcap.lang.BuildinFuncs.Aggregate"
-obj userAgeAggregateBiFunction "com.taobao.lbs.user.UserAgeAggregateBiFunction"
+func Aggregate "com.sp.lang.BuildinFuncs.Aggregate"
+obj userAgeAggregateBiFunction "xxx.UserAgeAggregateBiFunction"
 
 Aggregate(usersList, 0, userAgeAggregateBiFunction)
 
