@@ -1,8 +1,8 @@
 // 外部函数声明
-func udf_getUserName "com.lbs.user.UserInfo.getUserName"
+func udf_getUserName "com.sp.user.UserInfo.getUserName"
 
 // 外部表达式声明
-obj expr_keySelector "com.lbs.user.KeySelectorFunc"
+obj expr_keySelector "com.sp.user.KeySelectorFunc"
 
 // 字典
 val_dic = {

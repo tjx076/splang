@@ -2,7 +2,7 @@ package com.sp.lang.test;
 
 import com.sp.lang.SyntaxHelper;
 
-
+@Deprecated
 public class SyntaxHelperTest {
 
     public static void main(String[] args) {

@@ -19,8 +19,7 @@ public class InterpreterTest {
 		LangParser parser = new LangParser(lexer);
 		LangInterpreter interpreter = new LangInterpreter(parser);
 		System.out.println(interpreter.interpret());
-		
-		
+
  	}
 	
 	public static Double AnyUDFCall(Expr2<Integer, Integer, Double> expr2) {

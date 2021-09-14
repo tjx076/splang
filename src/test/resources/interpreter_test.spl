@@ -1,6 +1,6 @@
 // 外部函数声明
-func MultiValue "InterpreterTest.MultiValue"
-func AnyUDFCall "InterpreterTest.AnyUDFCall"
+func MultiValue "com.sp.lang.test.InterpreterTest.MultiValue"
+func AnyUDFCall "com.sp.lang.test.InterpreterTest.AnyUDFCall"
 
 // 外部对象声明
 obj anyObjRef "com.sp.test.AnyJavaObject"

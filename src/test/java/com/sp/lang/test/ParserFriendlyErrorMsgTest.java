@@ -19,13 +19,7 @@ public class ParserFriendlyErrorMsgTest {
 		LangParser parser = new LangParser(lexer);
 		parser.parse();
 		
-		List<AST> asts = parser.getASTList();
-		
-		System.out.println(asts.size());
-		
-		for(AST ast : asts){
-			System.out.println(ast);
-		}
+
  	}
 	
 }
